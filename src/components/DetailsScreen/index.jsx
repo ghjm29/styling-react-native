@@ -1,6 +1,18 @@
 import React from 'react';
-import { Text, Image, Button, ScrollView } from 'react-native';
+import { Text, Image, Button, ScrollView, StyleSheet } from 'react-native';
 
+const styles = StyleSheet.create({
+    image: {
+        height: 200,
+        width: 280
+    },
+    container:{
+        backgroundColor: "white",
+        height: 480,
+        margin: 20,
+        padding: 20
+    }
+})
 
 export const DetailsScreen = ({route})=>{
 
@@ -8,11 +20,11 @@ export const DetailsScreen = ({route})=>{
 
     return (
 
-        <ScrollView>
+        <ScrollView style={styles.container}>
   
             <Text>
 
-                <Image source={require('./../../img/img-3.jpg')} />
+                <Image source={require('./../../img/img-3.jpg')} style={styles.image}/>
                
                 <h1>
 

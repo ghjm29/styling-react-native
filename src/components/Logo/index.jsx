@@ -1,8 +1,19 @@
 import React from 'react';
-import { Image } from 'react-native';
+import { Image, StyleSheet } from 'react-native';
 
 const img = require('../../img/logo.png');
 
+const styles = StyleSheet.create({
+    logo: {
+        height: 110,
+        borderBottomColor: "darksteelblue",
+        borderBottomWidth: StyleSheet.hairlineWidth
+    }
+})
+
 export const Logo = () => (
-    <Image source={img} />
+    <Image 
+        style={styles.logo}
+        source={img
+    } />
 )
