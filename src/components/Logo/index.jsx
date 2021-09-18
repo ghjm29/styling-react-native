@@ -5,7 +5,7 @@ const img = require('../../img/logo.png');
 
 const styles = StyleSheet.create({
     logo: {
-        height: 110,
+        height: "16vh",
         borderBottomColor: "darksteelblue",
         borderBottomWidth: StyleSheet.hairlineWidth
     }
@@ -14,6 +14,7 @@ const styles = StyleSheet.create({
 export const Logo = () => (
     <Image 
         style={styles.logo}
-        source={img
-    } />
+        source={img}
+        resizeMode="contain"
+    />
 )

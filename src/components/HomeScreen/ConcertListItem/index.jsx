@@ -15,7 +15,9 @@ const styles = StyleSheet.create({
 		// width: 68,
 		flex: 1,
 		backgroundColor: "black",
-		padding: 12,
+		justifyContent: "center",
+		alignItems: "center"
+		// padding: 12,
 		// position: "absolute",
 		// left: 0
 	},
@@ -30,6 +32,9 @@ const styles = StyleSheet.create({
 		color: "white",
 		fontSize: "2vh",
 		whiteSpace: "nowrap"
+	},
+	tabCenterText: {
+		fontSize: "2vh"
 	}
 })
 
@@ -43,7 +48,7 @@ export const ConcertListItem = ({navigation, item}) => {
 					</Text>
 				</View>
 				<View style={styles.tabCenter}>
-					<Text>
+					<Text style={styles.tabCenterText}>
 						{item.name}
 					</Text>
 				</View>
